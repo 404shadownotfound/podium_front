@@ -68,7 +68,7 @@ podium_front/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/404shadownotfound/podium_front
    cd podium_front
    ```
 
