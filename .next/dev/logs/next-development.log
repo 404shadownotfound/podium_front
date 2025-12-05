@@ -1,0 +1,187 @@
+[00:00:01.107] Server  LOG      ✓ Ready in 734ms
+[00:00:14.602] Server  LOG      ○ Compiling / ...
+[00:00:19.134] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:20.224] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="scroll-smooth" suppressHydrationWarning={true}>
+                          <body
+                            className="font-sans antialiased bg-slate-950"
+-                           data-new-gr-c-s-check-loaded="14.1265.0"
+-                           data-gr-ext-installed=""
+                          >
+                  ...
+
+[00:00:20.224] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:20.224] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:20.224] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913383654}
+[00:00:32.086] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:32.087] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913395912}
+[00:00:32.476] Browser LOG     Connection response: {"status":"connected"}
+[00:00:32.476] Browser LOG     ✅ WebSocket connected
+[00:00:32.476] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:00:35.943] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:00:37.553] Browser LOG     ❌ WebSocket disconnected
+[00:00:37.553] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913401251}
+[00:00:52.427] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913416239}
+[00:00:52.753] Browser LOG     Connection response: {"status":"connected"}
+[00:00:52.753] Browser LOG     ✅ WebSocket connected
+[00:00:52.870] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:04:12.301] Server  LOG      ✓ Compiled in 465ms
+[00:04:42.052] Server  LOG      ✓ Compiled in 69ms
+[00:04:42.210] Browser LOG     ❌ WebSocket disconnected
+[00:04:43.209] Browser LOG     Connection response: {"status":"connected"}
+[00:04:43.209] Browser LOG     ✅ WebSocket connected
+[00:04:43.209] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:04:43.209] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:05:12.283] Server  LOG      ✓ Compiled in 551ms
+[00:06:34.116] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:34.375] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:06:34.376] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:06:34.377] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913758201}
+[00:06:34.823] Browser LOG     Connection response: {"status":"connected"}
+[00:06:34.823] Browser LOG     ✅ WebSocket connected
+[00:06:34.823] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:06:34.823] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:06:36.827] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:06:44.277] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:08.318000","id":"69326480ee27d0568390b601","name":"Alice","score":200,"team_id":"6932647eee27d0568390b600"},{"created_at":"2025-12-05T04:50:12.739000","id":"69326484ee27d0568390b602","name":"Bob","score":150,"team_id":"6932647eee27d0568390b600"}],"team_id":"6932647eee27d0568390b600","type":"users"}
+[00:06:49.335] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:06:49.335] Browser LOG     ❌ WebSocket disconnected
+[00:06:49.335] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913773067}
+[00:07:06.993] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913790806}
+[00:07:07.427] Browser LOG     Connection response: {"status":"connected"}
+[00:07:07.427] Browser LOG     ✅ WebSocket connected
+[00:07:07.427] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:07:07.427] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:07:08.444] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:07:09.489] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:07:10.188] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:07:11.093] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:07:11.819] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:07:13.716] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:08.318000","id":"69326480ee27d0568390b601","name":"Alice","score":200,"team_id":"6932647eee27d0568390b600"},{"created_at":"2025-12-05T04:50:12.739000","id":"69326484ee27d0568390b602","name":"Bob","score":150,"team_id":"6932647eee27d0568390b600"}],"team_id":"6932647eee27d0568390b600","type":"users"}
+[00:07:15.233] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:07:18.534] Browser LOG     ❌ WebSocket disconnected
+[00:07:18.534] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913802260}
+[00:07:54.459] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913838279}
+[00:07:54.949] Browser LOG     Connection response: {"status":"connected"}
+[00:07:54.949] Browser LOG     ✅ WebSocket connected
+[00:07:54.949] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:07:54.949] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:07:56.695] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:07:57.849] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:58.068] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:58.068] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:07:58.068] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913841887}
+[00:07:58.312] Browser LOG     Connection response: {"status":"connected"}
+[00:07:58.312] Browser LOG     ✅ WebSocket connected
+[00:07:58.457] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:07:58.457] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:07:59.151] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:08:01.462] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:08:01.462] Browser LOG     ❌ WebSocket disconnected
+[00:08:01.462] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913845197}
+[00:08:03.527] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913847353}
+[00:08:03.876] Browser LOG     Connection response: {"status":"connected"}
+[00:08:03.876] Browser LOG     ✅ WebSocket connected
+[00:08:04.067] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:08:04.067] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:08:05.413] Browser LOG     ❌ WebSocket disconnected
+[00:08:05.413] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913849145}
+[00:08:39.111] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764913882930}
+[00:08:39.575] Browser LOG     Connection response: {"status":"connected"}
+[00:08:39.576] Browser LOG     ✅ WebSocket connected
+[00:08:39.576] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:08:39.576] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:08:43.289] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:08:47.067] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:08.318000","id":"69326480ee27d0568390b601","name":"Alice","score":200,"team_id":"6932647eee27d0568390b600"},{"created_at":"2025-12-05T04:50:12.739000","id":"69326484ee27d0568390b602","name":"Bob","score":150,"team_id":"6932647eee27d0568390b600"}],"team_id":"6932647eee27d0568390b600","type":"users"}
+[00:19:57.429] Server  LOG      ✓ Compiled in 1265ms
+[00:21:05.869] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:06.120] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:21:06.120] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard/1","route":"/leaderboard/[id]"}
+[00:21:06.120] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard/1 color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard/[id]","o":"http://localhost:3000/leaderboard/1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764914629937}
+[00:21:06.414] Browser LOG     Connection response: {"status":"connected"}
+[00:21:06.414] Browser LOG     ✅ WebSocket connected
+[00:21:06.691] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:21:18.844] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:21:18.844] Browser LOG     ❌ WebSocket disconnected
+[00:21:18.844] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard/2 color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard/[id]","o":"http://localhost:3000/leaderboard/2","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764914642671}
+[00:21:19.251] Browser LOG     Connection response: {"status":"connected"}
+[00:21:19.252] Browser LOG     ✅ WebSocket connected
+[00:21:19.252] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:08.318000","id":"69326480ee27d0568390b601","name":"Alice","score":200,"team_id":"6932647eee27d0568390b600"},{"created_at":"2025-12-05T04:50:12.739000","id":"69326484ee27d0568390b602","name":"Bob","score":150,"team_id":"6932647eee27d0568390b600"}],"team_id":"6932647eee27d0568390b600","type":"users"}
+[00:21:19.373] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:08.318000","id":"69326480ee27d0568390b601","name":"Alice","score":200,"team_id":"6932647eee27d0568390b600"},{"created_at":"2025-12-05T04:50:12.739000","id":"69326484ee27d0568390b602","name":"Bob","score":150,"team_id":"6932647eee27d0568390b600"}],"team_id":"6932647eee27d0568390b600","type":"users"}
+[00:21:24.081] Browser LOG     ❌ WebSocket disconnected
+[00:21:24.081] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard/all color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard/[id]","o":"http://localhost:3000/leaderboard/all","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764914647906}
+[00:21:24.494] Browser LOG     Connection response: {"status":"connected"}
+[00:21:24.494] Browser LOG     ✅ WebSocket connected
+[00:21:24.494] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:21:27.431] Browser LOG     ❌ WebSocket disconnected
+[00:21:27.432] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard/1 color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard/[id]","o":"http://localhost:3000/leaderboard/1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764914651255}
+[00:21:27.858] Browser LOG     Connection response: {"status":"connected"}
+[00:21:27.858] Browser LOG     ✅ WebSocket connected
+[00:21:27.858] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:21:28.097] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:21:31.899] Browser LOG     ❌ WebSocket disconnected
+[00:21:31.899] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard/2 color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard/[id]","o":"http://localhost:3000/leaderboard/2","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764914655728}
+[00:21:32.302] Browser LOG     Connection response: {"status":"connected"}
+[00:21:32.303] Browser LOG     ✅ WebSocket connected
+[00:21:32.303] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:08.318000","id":"69326480ee27d0568390b601","name":"Alice","score":200,"team_id":"6932647eee27d0568390b600"},{"created_at":"2025-12-05T04:50:12.739000","id":"69326484ee27d0568390b602","name":"Bob","score":150,"team_id":"6932647eee27d0568390b600"}],"team_id":"6932647eee27d0568390b600","type":"users"}
+[00:21:33.006] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:08.318000","id":"69326480ee27d0568390b601","name":"Alice","score":200,"team_id":"6932647eee27d0568390b600"},{"created_at":"2025-12-05T04:50:12.739000","id":"69326484ee27d0568390b602","name":"Bob","score":150,"team_id":"6932647eee27d0568390b600"}],"team_id":"6932647eee27d0568390b600","type":"users"}
+[00:21:35.327] Browser LOG     ❌ WebSocket disconnected
+[00:21:35.327] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard/all color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard/[id]","o":"http://localhost:3000/leaderboard/all","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764914659153}
+[00:21:35.675] Browser LOG     Connection response: {"status":"connected"}
+[00:21:35.676] Browser LOG     ✅ WebSocket connected
+[00:21:35.823] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"created_at":"2025-12-05T04:50:06.181000","id":"6932647eee27d0568390b600","name":"Test Team Alpha","score":350},{"id":"6931ee62b3488580f1d47cdf","name":"horizon","score":140}],"type":"teams"}
+[00:21:42.680] Browser LOG     ❌ WebSocket disconnected
+[00:21:42.680] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard/1 color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard/[id]","o":"http://localhost:3000/leaderboard/1","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764914666504}
+[00:21:43.009] Browser LOG     Connection response: {"status":"connected"}
+[00:21:43.009] Browser LOG     ✅ WebSocket connected
+[00:21:43.355] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:21:43.735] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:22:40.243] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:40.403] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:22:40.403] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard/1","route":"/leaderboard/[id]"}
+[00:22:40.403] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard/1 color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard/[id]","o":"http://localhost:3000/leaderboard/1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764914724218}
+[00:22:40.733] Browser LOG     Connection response: {"status":"connected"}
+[00:22:40.733] Browser LOG     ✅ WebSocket connected
+[00:22:40.733] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:22:42.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:42.384] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:22:42.384] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard/1","route":"/leaderboard/[id]"}
+[00:22:42.384] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard/1 color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard/[id]","o":"http://localhost:3000/leaderboard/1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764914726213}
+[00:22:42.758] Browser LOG     Connection response: {"status":"connected"}
+[00:22:42.758] Browser LOG     ✅ WebSocket connected
+[00:22:42.866] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}
+[00:22:47.387] Server  LOG      ✓ Compiled in 98ms
+[00:23:03.728] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:23:03.875] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:23:03.875] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard/1","route":"/leaderboard/[id]"}
+[00:23:03.875] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard/1 color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard/[id]","o":"http://localhost:3000/leaderboard/1","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1764914747700}
+[00:23:04.239] Browser LOG     Connection response: {"status":"connected"}
+[00:23:04.239] Browser LOG     ✅ WebSocket connected
+[00:23:04.239] Browser LOG     📊 Leaderboard update received: {"leaderboard":[{"id":"69326232fd46218afb9c2fe5","name":"test2","score":100,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"6931ee0db3488580f1d47cde","name":"test","score":40,"team_id":"6931ee62b3488580f1d47cdf"},{"id":"69326526fd46218afb9c2ff7","name":"test3","score":40,"team_id":"6931ee62b3488580f1d47cdf"}],"team_id":"6931ee62b3488580f1d47cdf","type":"users"}

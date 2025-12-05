@@ -1,0 +1,61 @@
+.team-selector-container {
+    margin: 2rem 0;
+    max-width: 400px;
+}
+
+.team-selector-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.team-selector-wrapper {
+    position: relative;
+}
+
+.team-selector {
+    width: 100%;
+    padding: 1rem 3rem 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: var(--transition);
+    background-color: var(--bg-card);
+}
+
+.team-selector:hover {
+    border-color: var(--accent-primary);
+    box-shadow: var(--shadow-glow);
+}
+
+.team-selector:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: var(--shadow-glow);
+}
+
+.team-selector option {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    padding: 0.75rem;
+}
+
+.select-arrow {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--accent-primary);
+    font-size: 0.75rem;
+}
