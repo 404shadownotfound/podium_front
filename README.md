@@ -162,5 +162,5 @@ This project is private and proprietary.
 ---
 
 <p align="center">
-  Made with ❤️ for <strong>Nuit de l'Info 2025</strong>
+  Made with 404 shadownot found ❤️ for <strong>Nuit de l'Info 2025</strong>
 </p>
